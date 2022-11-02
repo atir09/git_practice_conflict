@@ -1,7 +1,7 @@
 function CheckPrime(number){
 	count=0;
 	for (i=1;i<=number;i++){
-		if (number%i){
+		if (number%i==0){
 			count++
 		}	
 	}
@@ -12,4 +12,9 @@ function CheckPrime(number){
 }
 
 
-CheckPrime(13)
+ans = CheckPrime(13);
+if (ans==true){
+      console.log("Prime")
+}else{
+      console.log("Not Prime")
+}
